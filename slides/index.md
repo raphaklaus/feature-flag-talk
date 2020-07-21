@@ -4,6 +4,12 @@ marp: true
 ---
 <!-- class: invert -->
 
+<style scoped>
+  h1 {
+    text-align: left
+  }
+</style>
+
 # Braving **Feature Flags**
 
 by Raphael D. Pinheiro
@@ -32,11 +38,11 @@ img[alt~="center"] {
 
 ---
 
-👍 Mitigate risk by having two environments whereby one can quickly rollback in case of failure
-👍 Smaller downtimes
-👎 Uses `All or None` strategy that redirects abruptly all traffic to the new version
-👎 Depend on ops team in many aspects
-👎 Duplicated environment
+## 👍 Mitigate risk by having two environments whereby one can quickly rollback in case of failure
+## 👍 Smaller downtimes
+## 👎 Uses `All or None` strategy that redirects abruptly all traffic to the new version
+## 👎 Depend on ops team in many aspects
+## 👎 Duplicated environment
 ___
 
 # Canary deployment
@@ -45,11 +51,11 @@ ___
 
 ---
 
-👍 Mitigate risk by having two environments whereby one can quickly rollback in case of failure
-👍 Smaller downtimes
-👍 Ability to smartly route a percentage of the traffic to either green or blue environments, reducing even more the risk of a system fall down
-👎 Depend on ops team in many aspects
-👎 Duplicated environment
+## 👍 Mitigate risk by having two environments whereby one can quickly rollback in case of failure
+## 👍 Smaller downtimes
+## 👍 Ability to smartly route a percentage of the traffic to either green or blue environments, reducing even more the risk of a system fall-down
+## 👎 Depend on ops team in many aspects
+## 👎 Duplicated environment
 
 ---
 
@@ -105,7 +111,6 @@ Think about it as a Canary release method on steroids.
   * `develop` doesn't make sense here
 * By creating smart user segmentation so you can target your changes to a very specific group
 
-
 ---
 
 # How?
@@ -141,7 +146,7 @@ Rule of thumb: Whenever the code you are changing might affect the user experien
 
 ---
 
-# What changes, what to expect
+# What to expect
 
 * Ship often
 * Faster feedback
@@ -151,7 +156,7 @@ Rule of thumb: Whenever the code you are changing might affect the user experien
 
 ---
 
-# What changes, what to expect
+# What to expect
 
 * No more "release days"
 * QA role will have to be repurposed.
@@ -182,7 +187,21 @@ Rule of thumb: Whenever the code you are changing might affect the user experien
 
 1) Deploy to a small group like QA team + few non-sensible users or opted-in beta users
 2) Expand this group to broader audience composed by the previous group + 10% of userbase
-3) Continue expanding until needed.
+3) Continue expanding until needed
+4) The main difference here is that we can include as many user groups as we want before hitting the real userbase.
 
-The main difference here is that we can include as many user groups as we want before hitting the real userbase.
+---
 
+# Wrapping up
+
+Sooner or later, issues on production are inevitable. But we can make them speak more quietly or shut them up at any moment if we work properly using Feature Flags.
+
+---
+
+<style scoped>
+  h1 {
+    text-align: center
+  }
+</style>
+
+# Questions? 🤔
