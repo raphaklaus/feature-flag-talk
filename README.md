@@ -11,12 +11,6 @@ Some years ago software and hardware engineers faced a problem somehow like this
     - some sensible dev
 
 ## Blue-green deployment
-<style>
-img[alt~="center"] {
-  display: block;
-  margin: 0 auto;
-}
-</style>
 
 ![h:480 center](slides/bluegreen.png)
 
@@ -25,7 +19,6 @@ img[alt~="center"] {
 ##### 👎 Uses `All or None` strategy that redirects abruptly all traffic to the new version
 ##### 👎 Depend on ops team in many aspects
 ##### 👎 Duplicated environment
-___
 
 # Canary deployment
 
@@ -38,12 +31,6 @@ ___
 ##### 👎 Duplicated environment
 
 ## Hmm, maybe there is a simpler way to go about this...
-<style>
-img[alt~="center"] {
-  display: block;
-  margin: 0 auto;
-}
-</style>
 
 ![h:640 center](slides/gif0.gif)
 
